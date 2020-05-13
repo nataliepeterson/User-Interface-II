@@ -1,3 +1,48 @@
+*{
+    font-family: 'Barlow', sans-serif;
+}
 h1{
-    font-size: 80px;
+    font-size: 40px;
+    margin:50px;
+    
+}
+nav{
+    display:flex;
+    font-size:18px;
+    justify-content:flex-start;
+    text-align:center;
+    align-items: center;
+    margin: 50px;
+
+   
+}
+.item{
+    display:flex;
+    width:100px;
+    height:40px;
+    border: 0.5px solid lightslategrey;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-evenly;
+   color: DarkSlateGrey;
+
+}
+.item:hover{
+    background-color: lightsteelblue;
+    color:salmon;
+}
+.projects{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h4:hover{
+color:salmon;
+}
+.hero{
+    margin: 50px;
+    border-radius: 10px;
+}
+.projects img{
+    border-radius: 10px;
 }
