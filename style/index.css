@@ -2,22 +2,27 @@
     font-family: 'Barlow', sans-serif;
     color:#2b2d2f;
     font-weight:400;
+    font-size:62.5%;
 }
 
 h1{
-    font-size: 40px;
+    font-size: 4.0rem;
     margin:75px;
     
 }
+h2{
+    font-size: 2.4rem;
+}
+h3{
+    display:none;
+}
 nav{
     display:flex;
-    font-size:18px;
+    font-size:2.4rem;
     justify-content:flex-start;
     text-align:center;
     align-items: center;
     margin: 30px 50px 50px 50px;
-
-   
 }
 .item{
     display:flex;
@@ -40,6 +45,10 @@ nav{
     justify-content: space-around;
     align-items: center;
 }
+h4{
+    Font-size:1.8rem;
+}
+
 h4:hover{
 color:salmon;
 }
@@ -54,6 +63,7 @@ color:salmon;
     display:flex;
     flex-direction: column;
     margin: 50px;
+    font-size:2.6rem;
 }
 div button{
     width: 100px;
@@ -87,7 +97,7 @@ footer button{
     background:salmon;
     color:white;
     border:none;
-    font-size:18px;
+    font-size:1.8rem;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -120,3 +130,86 @@ footer button:hover{
     background:black;
     color: white;
   }
+  @media(max-width:800px){
+    .about{
+        display:flex;
+        flex-direction: column;
+        margin: 100px 25px 50px 50px;
+    
+    }
+    .projects{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+  }
+ @media(max-width:500px){
+    h1{
+        font-size: 4.0rem;
+        margin:50px;
+        
+    }
+    h3{
+        display:flex;
+        justify-content: flex-end;
+        font-size: 1.8rem;
+        margin:5px 5px 5px 50px;
+        color:salmon;
+        animation-duration: 1s;
+        animation-name: slidein;
+    }
+    @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%; 
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+   
+    nav{
+        display:flex;
+        font-size:2.4rem;
+        /*justify-content:flex-end;*/
+        text-align:center;
+        align-content: space-evenly;
+        margin: 30px;
+    }
+    .hero{
+        display:flex;
+       flex-direction: column;
+        margin: 50px;
+        border-radius: 10px;
+        align-items:center;
+       /* width:75%;
+        height:auto;*/
+    }
+    .hero img{
+        width:75%;
+        height:auto;
+    
+    }
+    .about{
+        width:auto;
+        display:flex;
+        flex-direction: column;
+        margin: 5px;
+
+    
+    }
+    .projects{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .projects img{
+        width: auto;
+    }
+  }
+
+  
